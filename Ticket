@@ -1,0 +1,54 @@
+Public class Ticket {
+    Private String ticketNumber;
+    Private String passengerName;
+    Private String destination;
+    Private double price;
+    Public Ticket(String ticketNumber, String passengerName, String destination, double price) {
+        This.ticketNumber = ticketNumber;
+        This.passengerName = passengerName;
+        This.destination = destination;
+        This.price = price;
+    }
+    Public void setTicketNumber(String ticketNumber) {
+        This.ticketNumber = ticketNumber;
+  }  
+  Public void setPassengerName(String passengerName) {
+        This.passengerName = passengerName;
+    }
+    Public void setDestination(String destination) {
+        This.destination = destination;
+    }
+
+    Public void setPrice(double price) {
+        This.price = price;
+    }
+    Public String getTicketNumber() {
+        Return ticketNumber;
+    }
+
+    Public String getPassengerName() {
+        Return passengerName;
+    }
+
+    Public String getDestination() {
+        Return destination;
+    }
+
+    Public double getPrice() {
+        Return price;
+    }
+    Public void printTicketDetails() {
+        System.out.println(“Ticket Number: “ + ticketNumber);
+        System.out.println(“Passenger Name: “ + passengerName);
+        System.out.println(“Destination: “ + destination);
+        System.out.println(“Price: “ + price);
+    }
+    Public static void main(String[] args) {
+        Ticket ticket = new Ticket(“”, “”, “”, 0);
+        Ticket.setTicketNumber(“123456”);
+        Ticket.setPassengerName(“Anushree”);
+        Ticket.setDestination(“new york”);
+        Ticket.setPrice(15000);
+        Ticket.printTicketDetails();
+    }
+}
